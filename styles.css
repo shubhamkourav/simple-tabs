@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 5px;
+}
+
+.tabs {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  color: darkgray;
+  margin-right: 5px;
+}
+.tab.active {
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 2px solid #0e0e0e;
+}
+
+.tab:hover {
+  background: #ddd;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 34px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.pricing-table th {
+  background-color: #6d6d6d;
+  color: white;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #f0f0f0;
+}

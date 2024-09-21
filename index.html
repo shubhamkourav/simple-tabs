@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Basic Tabs</title>
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="tab active" onclick="openTab(event, 'Tab1')">Overview</div>
+      <div class="tab" onclick="openTab(event, 'Tab2')">Features</div>
+      <div class="tab" onclick="openTab(event, 'Tab3')">Pricing</div>
+    </div>
+
+    <div id="Tab1" class="tab-content">
+      <p>
+        This is an overview of the product. It highlights the key aspects and
+        value it brings to users.
+      </p>
+      <ul>
+        <li>User-friendly interface</li>
+        <li>High performance</li>
+        <li>24/7 Customer support</li>
+      </ul>
+    </div>
+
+    <div id="Tab2" class="tab-content" style="display: none">
+      <p>
+        Our product offers a variety of features designed to enhance user
+        experience:
+      </p>
+      <ul>
+        <li>Feature 1: Detailed analytics</li>
+        <li>Feature 2: Customizable settings</li>
+        <li>Feature 3: Integration with third-party apps</li>
+        <li>Feature 4: Secure data storage</li>
+      </ul>
+    </div>
+
+    <div id="Tab3" class="tab-content" style="display: none">
+      <p>We offer competitive pricing plans to suit different needs:</p>
+      <table class="pricing-table">
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Features</th>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>$10/month</td>
+          <td>Access to basic features</td>
+        </tr>
+        <tr>
+          <td>Pro</td>
+          <td>$25/month</td>
+          <td>Access to all features + premium support</td>
+        </tr>
+        <tr>
+          <td>Enterprise</td>
+          <td>$50/month</td>
+          <td>All features + dedicated account manager</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
